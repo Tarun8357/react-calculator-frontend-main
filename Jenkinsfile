@@ -15,16 +15,6 @@ pipeline {
 				 bat "npm run build"
             }
 			
-
-            post {
-                // If Maven was able to run the tests, even if some of the test
-                // failed, record the test results and archive the jar file.
-                success {
-                      emailext body: 'Build Installed Successfully', subject: 'Build Mail', to: 'tarun.dhakad@unoveo.com'
-		      echo "Build Successfull" 
-                }
-            }
-			
             steps {
                 bat 'npm install --save @testing-library/react @testing-library/jest-dom'
                 echo "Test called"
