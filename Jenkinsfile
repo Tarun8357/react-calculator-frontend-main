@@ -27,7 +27,7 @@ pipeline {
 			
 
         }
-		stage('Test') {
+		stage('Test'){
 			steps {
 
 				bat 'npm install --save @testing-library/react @testing-library/jest-dom'
