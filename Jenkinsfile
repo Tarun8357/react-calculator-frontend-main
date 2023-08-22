@@ -13,15 +13,17 @@ pipeline {
         
         stage('Build') {
             steps {
+				
                 echo "Build called"
                 bat ' set CI=false && npm install'
+				bat 'set CI=false && npm install jest'
                 bat ' set CI=false && npm run build'
             }
         }
         
         stage('Test') {
             steps {
-				bat 'set CI=false && npm install jest'
+				
                 echo "Test called"
                 bat ' set CI=false && npm test'
             }
