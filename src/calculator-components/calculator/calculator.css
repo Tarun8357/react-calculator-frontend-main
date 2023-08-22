@@ -1,0 +1,26 @@
+.calculatorContainer{
+    background-color:rgb(175, 201, 201);
+    width:312px;
+    height:auto;
+    margin-left:40%;
+    overflow:hidden;
+    border : 5px solid black;
+    border-radius:8px;
+}
+
+.btnContainer{
+    margin-top: 5px;
+    margin-right:5px;
+}
+.functionalBtnContainer{
+    margin-top: 2px;
+}
+
+.operationBtnContainer{
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+.numericBtnContainer{
+    margin-top: 2px;
+}

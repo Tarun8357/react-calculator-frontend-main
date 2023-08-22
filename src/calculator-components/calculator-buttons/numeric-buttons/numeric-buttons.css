@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Orbitron:wght@700&display=swap');
+
+.numericbuttons{
+    height: 70px;
+    width:70px;
+    color: white;
+    background-color: rgb(4, 96, 201);
+    border-radius:8px;
+    margin-left:5px;
+    margin-top:5px;
+    font-size:18px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 2px 2px black;
+}
+

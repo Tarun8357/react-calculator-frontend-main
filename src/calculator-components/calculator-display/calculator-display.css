@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Orbitron:wght@700&display=swap');
+
+.display{
+    
+    height : 60px;
+    width :345px;
+    background-color:rgb(171, 185, 185);
+    border-bottom: 5px solid black;
+    border-radius:2px;
+    font-size: 23px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 1px 1px black;
+}

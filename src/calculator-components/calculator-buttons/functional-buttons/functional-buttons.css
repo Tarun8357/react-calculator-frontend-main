@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Orbitron:wght@700&display=swap');
+
+
+.functionalbuttons{
+    height: 70px;
+    width: 70px;
+    color :white;
+    background-color:red;
+    margin-left:5px;
+    margin-top:5px;
+    border-radius:8px;
+    font-size:15px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 2px 2px black;
+}
