@@ -27,16 +27,13 @@ pipeline {
 			
 
         }
-		
-		 stage('Test') {
-            steps {
-				bat 'npm install --save @testing-library/react @testing-library/jest-dom'
-                echo "Test called"
-                bat 'ng test --include src/app/components/display/display/display.component.spec.ts --no-watch --no-progress'
-                
-            }
-        }
-		
+		stage('Test') {
+			steps {
 
+				bat 'npm install --save @testing-library/react @testing-library/jest-dom'
+				bat 'ng test --include src/app/components/display/display/display.component.spec.ts --no-watch --no-progress'           	 	
+			    
+            }      	
+        }
     }
 }
