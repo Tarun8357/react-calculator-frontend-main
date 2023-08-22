@@ -21,6 +21,7 @@ pipeline {
         
         stage('Test') {
             steps {
+				bat 'set CI=false && npm install jest'
                 echo "Test called"
                 bat ' set CI=false && npm test'
             }
