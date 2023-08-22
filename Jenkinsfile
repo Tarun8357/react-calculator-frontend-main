@@ -7,8 +7,8 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'accessId-1', usernameVariable: 'Tarun8357', passwordVariable: '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')]) {
                     git branch: 'main', credentialsId: 'accessId-1', url: 'https://github.com/Tarun8357/react-calculator-frontend-main.git'
                 }
-                bat "npm install"
-                bat "npm run build"
+                bat " process.env.CI = false npm install"
+                bat " process.env.CI = false npm run build"
             }
 
             post {
@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat "npm install --save @testing-library/react @testing-library/jest-dom"
-                bat "CI=false npm test"  // This line runs Jest tests
+                bat "process.env.CI = false npm test"  // This line runs Jest tests
             }
         }
     }
