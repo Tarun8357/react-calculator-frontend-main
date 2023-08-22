@@ -7,8 +7,8 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'accessId-1', usernameVariable: 'Tarun8357', passwordVariable: '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')]) {
                     git branch: 'main', credentialsId: 'accessId-1', url: 'https://github.com/Tarun8357/react-calculator-frontend-main.git'
                 }
-                bat " process.env.CI = false npm install"
-                bat " process.env.CI = false npm run build"
+                bat " CI = false npm install"
+                bat " CI = false npm run build"
             }
 
             post {
