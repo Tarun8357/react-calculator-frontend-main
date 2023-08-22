@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat "npm install --save @testing-library/react @testing-library/jest-dom"
-                bat "npm test"  // This line runs Jest tests
+                bat "CI=false npm test"  // This line runs Jest tests
             }
         }
     }
