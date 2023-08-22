@@ -11,8 +11,6 @@ pipeline {
                 // To install the node 
                  bat "npm install"
 				 
-				 bat "npm audit fix --force"
-				 
 				// To run the application 
 				 bat "npm run build"
             }
@@ -26,6 +24,13 @@ pipeline {
 		      echo "Build Successfull" 
                 }
             }
+			
+            steps {
+                bat 'npm install --save @testing-library/react @testing-library/jest-dom'
+                echo "Test called"
+                bat 'npm test'
+                
+            }
         }
 
     }
