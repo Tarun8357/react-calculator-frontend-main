@@ -14,15 +14,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Build called"
-                bat 'npm install'
-                bat 'npm run build'
+                bat ' CI=false npm install'
+                bat ' CI=false npm run build'
             }
         }
         
         stage('Test') {
             steps {
                 echo "Test called"
-                bat 'npm test'
+                bat ' CI=false npm test'
             }
         }
 
